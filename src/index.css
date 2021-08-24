@@ -27,6 +27,10 @@ h3 {
 
 }
 
+h3 {
+  text-align: center;
+}
+
 input {
   width: 100%;
   color: gray;
@@ -58,9 +62,15 @@ input {
 
 .card {
   border: 1px solid grey;
-  border-radius: .6rem;
+  border-radius: 1rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
+  transition: transform .3s ease
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .card-content {
@@ -72,6 +82,7 @@ input {
 .card img {
   height: 20rem;
   width: 100%;
+  border-radius: .6rem 1rem 0 0;
 }
 
 .card p {
@@ -80,4 +91,13 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: initial;
 }

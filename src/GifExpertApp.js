@@ -2,8 +2,9 @@ import { useState } from "react";
 import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 
-const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["One Piece"]);
+const GifExpertApp = ({ defaultCategories = ["One Piece"] }) => {
+  // const [categories, setCategories] = useState(["One Piece"]);
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
@@ -21,3 +22,11 @@ const GifExpertApp = () => {
 };
 
 export default GifExpertApp;
+
+/*
+1. Enzyme
+2.Enzyme-to-json
+3. Debe mostrar el componente correctamente
+  *shallow
+  * wrapper .toMatchSnapshot()
+*/
